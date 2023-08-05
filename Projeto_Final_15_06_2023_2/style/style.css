@@ -1,0 +1,354 @@
+/*-----------------cores-----------------*/
+.cor-bege{
+    color: #EEEBDD !important;
+}
+
+.cor-de-fundo-bege{
+    background-color: #EEEBDD !important;
+}
+
+.cor-vermelho-claro{
+    color: #CE1212 !important;
+}
+
+.cor-de-fundo-vermelho-claro{
+    background-color: #CE1212 !important;
+}
+
+.cor-vermelho-escuro{
+    color: #810000 !important;
+}
+
+.cor-de-fundo-vermelho-escuro{
+    background-color: #810000 !important;
+}
+
+.cor-preto{
+    color: black !important;
+}
+
+.cor-de-fundo-preto{
+    background-color: black !important;
+}
+
+/*-----------------body-----------------*/
+body{
+    width: 100%;
+    background-color: #EEEBDD;
+    font-family: 'Jost', sans-serif;
+    font-weight: bold;
+}
+
+/*-----------------header-----------------*/
+.div-navbar{
+    height: auto;
+    background-color: #810000 !important;
+}
+
+.div-menu{
+    margin: 0 0 0 0;
+}
+
+.div-menu li{
+    margin: 0 0 0 2em;
+}
+
+.dropdown-item:hover{
+    background-color: #CE1212 !important;
+}
+
+.botao-pesquisar{
+    border-color: #EEEBDD;
+}
+
+.botao-pesquisar:hover {
+    color: #810000 !important;
+    background-color: #EEEBDD;
+}
+
+.active{
+    background-color: #CE1212 !important;
+    border: none !important;
+    border-radius: 0.4em;
+}
+
+/*-----------------main-----------------*/
+main{
+    margin: 0 auto !important;
+}
+
+a{
+    text-decoration: none;
+}
+
+.navegacao{
+    margin: 9.4em auto auto !important;
+}
+
+.div-navegacao{
+    padding: 0.8em 0 0 0 !important;
+}
+
+.titulo-produtos{
+    font-size: 3em;
+}
+
+.section-cadastrese{
+    background-color: #dcdad0;
+    border-radius: 5em;
+    margin: 14em auto 5em !important;
+}
+
+.div-sobreomercado{
+    color: #810000;
+}
+
+.imagens-sobreomercado{
+    max-width: 20em !important;
+}
+
+.objeto-fit{
+    object-fit: cover !important;
+}
+
+.filtro{
+    margin-top: 1em !important;
+    border-radius: 0.4em;
+}
+
+.texto-filtro{
+    cursor: pointer;
+}
+
+.card{
+    max-width: 14em !important;
+    height: 32em !important;
+    border: none !important;
+}
+
+.card-inicio{
+    max-width: 14em !important;
+    max-height: 32em !important;
+    border: none !important;
+}
+
+.card-title{
+    text-align: center !important;
+    font-size: 1.1em;
+    max-width: 10em !important;
+    max-height: 2em !important;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card-text{
+    text-align: justify;
+    color: #CE1212;
+    margin-top: auto;
+}
+
+.botao-mostrar-mais{
+    width: 10em;
+}
+
+/*-----------------footer-----------------*/
+footer{
+    background-color: #810000;
+}
+
+.img-logo-footer{
+    width: 5em;
+    height: auto;
+}
+
+.icones-footer{
+    width: auto;
+    height: 3em;
+    padding: 0 0 0 0.5em;
+}
+
+.informacoes-footer{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: justify;
+}
+
+.sobreomercado-a{
+    text-decoration: none;
+    color: #EEEBDD;
+}
+
+/*-------------------------------responsividade com media-------------------------------*/
+
+/*--------------max-width--------------*/
+
+@media (max-width:1451px) /*Aqui são as configurações para melhor visualização (responsividade) em telas menores que 1451 pixels (LAPTOP L)*/
+{
+    .div-produtos-inicio{                        /*o conteúdo da div-produtos-inicio foi alterado para alinhar itens ao centro*/
+        justify-content: center;
+    }
+
+    .card-inicio{
+        flex: 50% !important;                    /*a ocupação dos cards (da página inicial) na largura da div foi alterada para eles ocuparem 50% dela (div)*/
+        max-width: 23% !important;               /*o tamanho máximo dos cards (da página inicial) foi alterado para 23%*/
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+}
+
+@media (max-width:1199px) /*Aqui são as configurações para melhor visualização (responsividade) em telas menores que 1199 pixels*/
+{
+    .navegacao{
+        margin: 7.4rem auto auto !important;
+    }
+}
+
+@media (max-width:769px) /*Aqui são as configurações para melhor visualização (responsividade) em telas menores que 769 pixels(TABLET)*/
+{
+    .section-produtos{
+        width: 100%;                             /*a largura da section-produtos foi alterada para ela ocupar 100% da tela*/
+        flex-direction: column !important;       /*a organização dos itens da section produtos foi de "um ao lado do outro" para "um sobre o outro"*/
+    }
+
+    .filtro{
+        display: flex;
+        margin: auto !important;
+        max-width: 75%;
+    }
+
+    .metade-filtro{
+        flex: 50%;                               /*a ocupação da metade do conteúdo (do filtro das páginas de produtos) na largura da div foi alterada para eles ocuparem 50% dela (div)*/
+        max-width: 50%;                          /*o tamanho do conteúdo (do filtro das páginas de produtos) foi alterado para 50%*/
+    }
+
+    .selecao-filtro{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .texto-filtro{
+        width: 9em !important;
+        margin: auto 2em auto 0 !important;
+        font-size: 0.8em;
+    }
+
+    .card{
+        flex: 50% !important;                    /*a ocupação dos cards (das páginas de produtos) na largura da div foi alterada para eles ocuparem 50% dela (div)*/
+        max-width: 44% !important;               /*o tamanho dos cards (da páginas de produtos) foi alterado para 44%*/
+        margin: 0.3em 0.3em !important;          /*as margens dos cards (da páginas de produtos) foram alteradas para 0.3em*/
+    }
+
+    .div-produtos{                               /*o conteúdo da div-produtos foi alterado para alinhar itens ao centro*/
+        justify-content: center !important;
+    }
+
+    .section-cadastrese{
+        border-radius: 0;                        /*a curva (arredondamento) da section-cadastrese foi alterada de 5em para 0*/
+        margin: 14em auto 5em !important;        /*as margens da section-cadastrese foram alteradas para: 14em auto 5em*/
+        width: 100% !important;                  /*a largura da section-cadastrese foi alterada para ela ocupar 100% da tela*/
+    }
+
+    .div-imagens-sobreomercado{
+        display: flex;
+        flex-wrap: wrap;
+        width: 75% !important;                   /*a largura da div-imagens-sobreomercado foi alterada para ela ocupar 75% da tela*/
+    }
+
+    .icones-footer{
+        width: auto;
+        height: 2em;
+    }
+    
+    .img-formas-de-pagamento{
+        width: 90% !important;                   /*a largura da imagem-formas-de-pagamento foi alterada para ela ocupar 90% da div*/
+    }
+}
+
+@media (max-width:426px) /*Aqui são as configurações para melhor visualização (responsividade) em telas menores que 426 pixels(MOBILE-L)*/
+{
+    .filtro{
+        max-width: 60%;
+    }
+
+    .texto-filtro{
+        font-size: 0.6em;
+    }
+
+    .card{
+        flex: 100% !important;
+        max-width: 15em !important;
+        margin: 1em auto auto !important;
+    }
+
+    .div-sobreomercado{
+        font-size: 1em !important;
+    }
+
+    .banner-faixa{
+        display: none;                           /*o banner-faixa foi desativado*/
+    }
+
+    .img-logo-footer{
+        width: 4em;                              /*a largura da imagem-logo-footer foi alterada para 4em*/
+        height: auto;
+    }
+    
+    .icones-footer{
+        width: auto;
+        height: 1.6em;                           /*a altura dos icones-footer foi alterada para 1.6em*/
+    }
+}
+
+@media (max-width:376px) /*Aqui são as configurações para melhor visualização (responsividade) em telas menores que 376 pixels(MOBILE-M)*/
+{
+    .filtro{
+        max-width: 70%;
+    }
+}
+
+@media (max-width:320px) /*Aqui são as configurações para melhor visualização (responsividade) em telas menores que 320 pixels(MOBILE-S)*/
+{
+    .filtro{
+        max-width: 81%;
+    }
+
+    .img-logo-footer{
+        width: 3em;                              /*a largura da imagem-logo-footer foi alterada para 3em*/
+        height: auto;
+    }
+
+    .icones-footer{
+        width: auto;
+        height: 1.2em;                           /*a altura dos icones-footer foi alterada para 1.2em*/
+    }
+}
+
+
+
+
+
+
+/*--------------min-width--------------*/
+
+@media (min-width:426px) /*Aqui são as configurações para melhor visualização (responsividade) em telas maiores que 426 pixels(MOBILE-L)*/
+{
+    .banner-mobile{
+        display: none;                           /*o banner-mobile foi desativado*/
+    }
+}
+
+@media (min-width:2000px) /*Aqui são as configurações para melhor visualização (responsividade) em telas maiores que 2000 pixels*/
+{
+    .section-cadastrese{
+        border-radius: 5em;
+        margin: 18em auto 9em !important;
+    }
+
+    .div-imagens-sobreomercado{
+        width: 100% !important;                  /*a largura da div-imagens-sobreomercado foi alterada para ocupar 100% da tela*/
+    }
+
+    .imagens-sobreomercado{
+        max-width: 30em !important;
+    }
+}
